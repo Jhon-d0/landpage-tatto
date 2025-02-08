@@ -1,0 +1,88 @@
+// SOBRE
+
+section.sobre{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../imgs/bg.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.txt-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.txt-sobre h1{
+    font-size: 90px;
+}
+
+.container-sobre{
+    width: 100%;
+    height: fit-content;
+    margin: 40px  0;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 10px;
+    align-items: center;
+}
+
+.box-sobre{
+    padding: 20px 24px;
+    border-radius: 20px !important;
+    background-color: var(--text-sub);
+    flex-grow: 1;
+    width: 260px;
+    height: 240px;
+    gap: 10px;
+    transition: .8s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-sobre:hover{
+    transform: scale(1.01);
+    box-shadow: 10px 10px 40px var(--text-sub);
+}
+
+.txt-box-sobre{
+    gap: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.txt-box-sobre p, .txt-box-sobre h3, .box-sobre i{
+    color: #000;
+}
+
+.txt-box-sobre h3, .box-sobre i{
+    font-size: 35px;
+}
+
+.txt-sobre button{
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: var(--text-base-dark);
+    color: var(--text-base-light);
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+
+
+

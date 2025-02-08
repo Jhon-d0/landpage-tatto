@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: "Poppins", serif;
+    color: var(--text-base-light);
+}
+
+img{
+    width: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+ul li, a{
+    list-style: none;
+    text-decoration: none;
+    color: #a7a7a7;
+}
+
+:root {
+    --text-base-dark: #000;
+    --text-base-light: #fff;
+    --text-sub: #a7a7a7;
+    --text-base-gray: #787878;
+    --bg-icon: #131313;
+    --bg-top-bar: #61616142;
+}
+
+body{
+    background-image: url("../../imgs/bg.webp");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.opacity{
+    width: 100%;
+    height: 100%;
+    background-color: #00000096;
+}
+
+main{
+    padding: 10% 15%;
+    height: 100%;
+    width: 100%;
+}
+
+.title{
+    width: 100%;
+    height: 250px;
+    gap: 100px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #a7a7a7;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 100%;
+    padding-left: 100px;
+}
+
+.txt-title{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.txt-title h1{
+    font-size: 50px;
+}
+
+.link-title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    gap: 10px;
+    font-size: 19px;
+}
+
+.link-title a{
+    transition: .8s;
+}
+
+.link-title a:hover{
+    color: var(--text-base-light);
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding-top: 50px;
+}
+
+.colum{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.box-tatto{
+    transition: 1s;
+}
+
+.box-tatto:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 10px 10px 40px #787878;
+}
+
+// js imagem
+
+.opacity-img{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000a9;
+    z-index: 10;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.tela-da-imagem{
+    max-width: 800px;
+    max-height: fit-content;
+
+    display: none;
+}
+
+.active{
+    display: flex;
+    position: fixed;
+    animation: none;
+}
+
+.setas-img button{
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+
+    z-index: 10000;
+}
+
+.btn-close{
+    position: absolute;
+    left: 90%;
+    top: 10%;
+}
+
+.left{
+    position: absolute;
+    right: 90%;
+}
+
+.right{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+}
+
+.right:hover{
+    animation: right 1s alternate infinite ease-in-out;
+}
+
+.left:hover{
+    animation: left 1s alternate infinite ease-in-out;
+}
+
+
+
+@keyframes right {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+
+@keyframes left {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-20px);
+    }
+}
+
+
+
+
+
+
