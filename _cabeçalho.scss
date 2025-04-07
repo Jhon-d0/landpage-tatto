@@ -1,0 +1,43 @@
+.title{
+    width: 100%;
+    height: 250px;
+    gap: 100px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #a7a7a7;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo_tatto{
+    height: 100%;
+    padding-left: 100px;
+}
+
+.txt-title{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.txt-title h1{
+    font-size: 50px;
+}
+
+.link-title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    gap: 10px;
+    font-size: 19px;
+}
+
+.link-title a{
+    transition: .8s;
+}
+
+.link-title a:hover{
+    color: var(--text-base-light);
+}
