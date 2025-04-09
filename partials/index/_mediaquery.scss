@@ -1,0 +1,118 @@
+@media (max-width: 768px) { /* Tablets e celulares grandes */
+
+    body{
+        width: 100vh;
+    }
+
+    // HOME 
+
+    .home{
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .txt-home{
+        height: fit-content;
+        width: 100%;
+        gap: 60px;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .txt-home h1{
+        font-size: 3rem;
+        line-height: 100%;
+    }
+
+    // SOBRE
+
+    section.sobre{
+        height: fit-content;
+    }
+
+    .txt-sobre h1{
+        font-size: 2rem;
+        line-height: 100%;
+    }
+
+    .container-sobre{        
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 20px;
+        justify-content: center;
+    }
+
+    .p-sobre{
+        display: none;
+    }
+
+    // PORTFOLIO
+
+    section.portfolio{
+        padding: 10% 0;
+        height: fit-content;
+    }
+
+    .txt-portfolio .txt-right{
+        width: 100%;
+        gap: 50px;
+        padding-left: 0;
+
+        align-items: center;
+    }
+
+    .txt-right h1{
+        font-size: 3rem;
+    }
+
+    .txt-portfolio .txt-right ol{
+        font-size: 1.3rem;
+    }
+
+    .txt-portfolio .txt-left{
+        display: none;
+    }
+
+    .portfolio button{
+        margin-bottom: 40px;
+    }
+
+    // segurança
+
+    .seguranca{
+        padding: 5% 0;
+        gap: 10px; 
+
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .seguranca .h1{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .seguranca .txt-seguranca{
+        width: 100%;
+    }
+
+    // FORMULARIO
+
+    .linha{
+        display: none;
+    }
+
+    form{
+        width: 100vw;
+        padding: 0px 20px;
+    }
+
+    .contact-infos{
+        display: none;
+    }
+}
