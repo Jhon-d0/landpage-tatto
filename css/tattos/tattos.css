@@ -1,0 +1,317 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "font1";
+  src: url("../../fonts/Achafsex.ttf") format("truetype"); /* Altere o nome do arquivo */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font2";
+  src: url("../../fonts/AlbertTextBold.otf") format("truetype"); /* Altere o nome do arquivo */
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "font2", system-ui;
+  color: var(--text-base-light);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+li, a, p {
+  list-style: none;
+  text-decoration: none;
+  color: #a7a7a7;
+  font-family: "font2", serif;
+}
+
+span {
+  color: var(--text-sub);
+}
+
+:root {
+  --text-base-dark: #000;
+  --text-base-light: #f2f4f6;
+  --text-sub: #9c8c8c;
+  --text-base-gray: #695e5e;
+  --bg-icon: #131313;
+  --bg-top-bar: #61616142;
+  --white: #f2f4f6;
+}
+
+body {
+  background-image: url("../../imgs/bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+html, body {
+  max-width: 100%;
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+  padding: 0px 4%;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.4039215686);
+  background-color: var(--azul-claro);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .line-footer {
+  padding: 20px 0;
+  width: 100%;
+}
+
+footer .socials .social-item:hover {
+  background-color: var(--white);
+  color: var(--azul-claro);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.borda {
+  border-top: 2px solid #fff;
+}
+
+footer .line-footer p i {
+  color: #fff;
+  font-size: 22px;
+}
+
+footer .line-footer p a {
+  color: #dee2e6;
+}
+
+footer .line-footer p a:hover {
+  color: #fff;
+}
+
+.logo {
+  width: 110px;
+  cursor: pointer;
+}
+
+.socials {
+  padding: 40px 40px;
+  font-size: 25px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.socials i {
+  display: block;
+  color: var(--text-sub);
+}
+
+.socials i:hover {
+  color: var(--text-base-light);
+  animation: anima-icon 0.8s infinite alternate ease-in-out;
+}
+
+@keyframes anima-icon {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-5px) scale(1.3);
+  }
+}
+.title {
+  width: 100%;
+  height: 250px;
+  gap: 100px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #a7a7a7;
+  display: flex;
+  align-items: center;
+}
+
+.logo_tatto {
+  height: 100%;
+  padding-left: 100px;
+}
+
+.txt-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.txt-title h1 {
+  font-size: 50px;
+}
+
+.link-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  font-size: 19px;
+}
+
+.link-title a {
+  transition: 0.8s;
+}
+
+.link-title a:hover {
+  color: var(--text-base-light);
+}
+
+.opacity-img {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.662745098);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela-da-imagem {
+  max-width: 800px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  display: none;
+}
+
+.active {
+  display: flex;
+  position: fixed;
+  animation: none;
+}
+
+.setas-img button {
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  z-index: 10000;
+}
+
+.btn-close {
+  position: absolute;
+  left: 90%;
+  top: 10%;
+}
+
+.left {
+  position: absolute;
+  right: 90%;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+
+.right:hover {
+  animation: right 1s alternate infinite ease-in-out;
+}
+
+.left:hover {
+  animation: left 1s alternate infinite ease-in-out;
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding: 0;
+  }
+  .logo_tatto {
+    display: none;
+  }
+  .tela-da-imagem {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .btn-close {
+    left: 80%;
+    top: 6%;
+  }
+  .left {
+    right: 80%;
+    top: 85%;
+  }
+  .right {
+    top: 85%;
+    left: 80%;
+  }
+}
+.opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5882352941);
+}
+
+main {
+  padding: 10% 15%;
+  height: 100%;
+  width: 100%;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-top: 50px;
+}
+
+.colum {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box-tatto {
+  transition: 1s;
+}
+
+.box-tatto:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 10px 10px 40px #787878;
+}/*# sourceMappingURL=tattos.css.map */
