@@ -1,0 +1,79 @@
+// // ROLAGEM text
+
+// .rolagem{
+//     width: 3333px;
+//     background-color: transparent;
+//     overflow: hidden;
+// }
+
+// .container-rolagem{
+//     background-color: var(--text-sub);
+//     font-size: 3rem;
+//     width: 100%;
+//     height: 200px;
+//     gap: 30px;
+//     position: relative;
+//     cursor: context-menu;
+
+//     display: flex;
+//     align-items: center;
+// }
+
+// .container-rolagem .h1{
+//     max-width: 10000px;
+//     max-height: 140px;
+//     animation: rolagem 15s infinite alternate ease-in-out;
+//     white-space: nowrap;
+
+//     display: flex;
+//     align-items: center;
+// }
+
+// .container-rolagem h1{
+//     color: var(--text-base-dark);
+// }
+
+// @keyframes rolagem {
+//     0%{
+//         transform: translateX(0);
+//     }
+//     100%{
+//         transform: translateX(-10000px);
+//     }
+// }
+
+
+.rolagem {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .container-rolagem {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: max-content; /* conteúdo cresce com base no conteúdo */
+    animation: rolagem 20s linear infinite;
+    background-color: var(--text-sub);
+    
+  }
+  
+  .container-rolagem .h1 {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--text-base-dark);
+  }
+  
+  /* Pode ajustar o tempo e velocidade aqui */
+  @keyframes rolagem {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
