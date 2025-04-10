@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+
+    main{
+        padding: 3% 6%;
+    }
+
+    .logo_tatto{
+        display: none;
+    }
+    
+    // js image
+
+    .tela-da-imagem{
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .btn-close{
+        left: 80%;
+        top: 6%;
+    }
+
+    .left{
+        right: 80%;
+        top: 85%;
+    }
+
+    .right{
+        top: 85%;
+        left: 80%;
+    }
+}
