@@ -1,0 +1,45 @@
+// ROLAGEM text
+
+.rolagem{
+    width: 3000px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.container-rolagem{
+    background-color: var(--text-sub);
+    font-size: 3rem;
+    width: 100%;
+    height: 200px;
+    gap: 30px;
+    position: relative;
+    cursor: context-menu;
+
+    display: flex;
+    align-items: center;
+}
+
+.container-rolagem .h1{
+    max-width: 10000px;
+    max-height: 140px;
+    animation: rolagem 15s infinite alternate ease-in-out;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+}
+
+.container-rolagem h1{
+    color: var(--text-base-dark);
+}
+
+@keyframes rolagem {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-10000px);
+    }
+}
+
+
